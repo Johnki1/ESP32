@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor de Calidad de Aire</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Monitor de Calidad de Aire</h1>
+        <div class="card-container">
+            <div class="card" id="aqi-card">
+                <h2>AQI</h2>
+                <p id="aqi-value">-</p>
+                <small id="estado-value">-</small>
+            </div>
+            <div class="card" id="co2-card">
+                <h2>CO₂ (%)</h2>
+                <p id="co2-value">-</p>
+            </div>
+            <div class="card" id="no2-card">
+                <h2>NO₂ (%)</h2>
+                <p id="no2-value">-</p>
+            </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="chart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
